@@ -1,0 +1,20 @@
+<h1>Say#goodbye</h1>
+<p>
+	It is nice having you here.
+	<br>
+	加法：<%= 1 + 2 %>
+	字符串拼接：<%= "cow" + "boy" %><br>
+	1小时以后：<%= 1.hour.from_now.localtime %>
+</p>
+<p>Say 
+	<%= link_to "Hello", say_hello_path %>
+</p>
+<div>
+	列出当前目录中的所有文件
+	<ul>
+		<% @files.each do |file| %>
+			<li>file name is: <%= file %></li>
+		<% end %>
+	</ul>
+</div>
+<p>Find me in app/views/say/goodbye.html.erb</p>
