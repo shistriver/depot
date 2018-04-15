@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :line_items
+  resources :carts
   #get 'store/index'
   #目的是让rails创建store_index_path 和 store_index_url 两个方法以便现有代码（和测试）能继续正常运行
   root 'store#index', as: 'store_index'
